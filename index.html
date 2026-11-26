@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anto Acevedo · Portafolio</title>
+<meta name="description" content="Portafolio de Anto Acevedo, estudiante de Diseño de la Universidad Diego Portales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fondo" aria-hidden="true"></div>
+
+<header class="encabezado">
+  <a href="#inicio" data-vista="inicio">ANTO ACEVEDO</a>
+  <a href="#contacto" data-vista="contacto">CONTACTO</a>
+</header>
+
+<!-- Página de inicio -->
+<main class="vista activa" id="inicio">
+  <div class="inicio">
+    <div class="flotantes" id="flotantes"></div>
+    <a class="boton-titulo" href="#about" data-vista="about">ABOUT ME</a>
+  </div>
+</main>
+
+<!-- Página About me -->
+<main class="vista" id="about" aria-label="¿Quién soy?">
+  <div class="quien">
+    <div class="tarjeta">
+      <a class="volver" href="#inicio">← volver</a>
+      <h2>¿QUIÉN SOY?</h2>
+      <p>Soy Anto Acevedo, estudiante de Diseño de la Universidad Diego Portales, hoy en día me dedico exclusivamente a mi carrera. Por mi parte personal, me gusta siempre aprender cosas nuevas como cerámica, tejido y técnicas, dibujo, entre otras cosas.</p>
+      <p>Me gusta diseñar desde la curiosidad, explorando aquello que llama mi atención sin limitarme a lo convencional. Mi identidad creativa se caracteriza por una fascinación por lo absurdo, la combinación de elementos inesperados y una estética lúdica de inspiración infantil. A través del diseño, busco romper con la seriedad de lo cotidiano y dar personalidad a los objetos.</p>
+      <h3>Herramientas</h3>
+      <dl class="herramientas">
+        <div><dt>Modelado 3D y CAD:</dt><dd>Rhino - AutoCAD - Inventor</dd></div>
+        <div><dt>Gráfico:</dt><dd>Illustrator</dd></div>
+        <div><dt>Desarrollo WEB:</dt><dd>html - css - VS Code - GitHub</dd></div>
+      </dl>
+    </div>
+  </div>
+</main>
+
+<!-- Página de cada proyecto (se llena según el proyecto elegido) -->
+<main class="vista" id="proyecto" aria-label="Proyecto">
+  <div class="proyecto-pag">
+    <div class="pr-fotos" id="pr-fotos"></div>
+    <div class="pr-video" id="pr-video"></div>
+    <div class="tarjeta pr-texto">
+      <div class="encabeza">
+        <a class="volver" href="#inicio">← volver</a>
+        <h2 id="pr-titulo"></h2>
+      </div>
+      <p id="pr-texto"></p>
+    </div>
+    <div class="tarjeta pr-enlaces" id="pr-enlaces"></div>
+  </div>
+</main>
+
+<!-- Visor para ver las fotos de los proyectos en grande -->
+<div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button type="button" class="visor-cerrar" aria-label="Cerrar">cerrar ✕</button>
+  <img id="visor-img" src="" alt="">
+</div>
+
+<!-- Página de contacto -->
+<main class="vista" id="contacto" aria-label="Contacto">
+  <div class="contacto">
+    <div class="tarjeta">
+      <h2>CONTACTO</h2>
+      <p>Si algo de aquí te dio curiosidad, escríbeme.</p>
+      <a class="correo" href="mailto:antonia.acevedo3@mail.udp.cl">antonia.acevedo3@mail.udp.cl</a>
+      <ul class="redes">
+        <li><a href="https://www.instagram.com/nt0nii" target="_blank" rel="noopener">Instagram<small>@nt0nii</small></a></li>
+        <li><a href="https://github.com/antoace67" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
